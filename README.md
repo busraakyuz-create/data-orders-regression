@@ -21,6 +21,10 @@ Using **OLS regression (statsmodels)** on ~96,000 orders from the **Olist** Braz
 | `wait_time` + `delay_vs_expected` | 0.114 |
 | Full model (7 features, 95,872 orders) | **0.145** |
 
+![Full model coefficients](images/model4_coefficients.png)
+
+*Coefficients of the full model ("Katsayı Değeri" = coefficient value).*
+
 - **Wait time is the main delivery driver.** Each extra day of waiting lowers the score by ~0.045 points. Once wait time is controlled for, the effect of delay drops from -0.075 to -0.021 per day.
 - **Each additional seller in an order** lowers the score by about **1 point** (coef. -1.06), and each extra item lowers it by ~0.24 points.
 - **Price and freight value are not significant** (p = 0.49 and p = 0.39).
